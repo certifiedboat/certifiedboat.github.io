@@ -1,17 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Certifiedboat Members</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet"/>
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifiedboat Official Site</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'VT323', monospace;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Custom animation for pulse effect on hero text */
+        @keyframes pulse-animate {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .animate-pulse-custom {
+            animation: pulse-animate 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+    <!-- Schema Markup for Google Knowledge Panel -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "YBK Sniper",
+      "alternateName": "Lucky Ngabuh",
+      "birthDate": "2002-01-01",
+      "url": "https://linktr.ee/ybksniper",
+      "description": "Lucky Ngabuh (born January 1, 2002), known professionally as YBK Sniper, is a Malawian rapper, businessman, and record executive.",
+      "hasOccupation": [
+        {
+          "@type": "Occupation",
+          "name": "Rapper"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Songwriter"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Record Producer"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Record Executive"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Businessman"
+        }
+      ],
+      "genre": ["Hip-hop", "Trap"],
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "Weedside Gang"
+        },
+        {
+          "@type": "RecordLabel",
+          "name": "Certifiedboat records"
+        }
+      ],
+      "sameAs": [
+        "https://open.spotify.com/artist/0wnZuvXhRy3z85PNHn494F",
+        "https://www.instagram.com/ybksniper",
+        "https://x.com/ybksniper",
+        "https://linkedin.com/in/cyber30",
+        "https://music.apple.com/us/artist/ybk-sniper/1785665568",
+        "https://m.youtube.com/@YBKSniper"
+      ]
     }
-  </style>
+    </script>
 </head>
 <body class="bg-white text-gray-900 min-h-screen">
 
