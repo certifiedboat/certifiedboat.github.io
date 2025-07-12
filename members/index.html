@@ -230,9 +230,126 @@
           </div>
         </div>
     </section>
+    <!-- Contact Section -->
+    <section
+        id="contact"
+        class="py-20 px-4 bg-white"
+    >
+        <div class="container mx-auto max-w-2xl">
+            <h2 class="text-5xl font-bold text-green-700 text-center mb-12">Get In Touch</h2>
+            <p class="text-lg text-gray-700 text-center mb-10">
+                Ready to elevate your sound? Fill out the form below or reach out directly.
+            </p>
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 text-lg mb-4">
+                    You can also find me on social media:
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://instagram.com/ybksniper" class="text-gray-600 hover:text-green-600 transition-colors duration-300">
+                        <i data-lucide="instagram" size="32"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/cyber30" class="text-gray-600 hover:text-green-600 transition-colors duration-300">
+                        <i data-lucide="linkedin" size="32"></i>
+                    <a href="https://x.com/ybksniper" class="text-gray-600 hover:text-green-600 transition-colors duration-300">
+                        <i data-lucide="twitter" size="32"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@ybksniper?sub_confirmation=1" class="text-gray-600 hover:text-green-600 transition-colors duration-300">
+                        <i data-lucide="youtube" size="32"></i>
+                    </a>
+                </div>
+                <!-- Linktree Button -->
+                <div class="mt-8">
+                    <a
+                        href="https://linktr.ee/ybksniper"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center px-8 py-4 bg-green-700 text-white text-xl font-bold rounded-full shadow-lg hover:bg-green-800 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-600 focus:ring-opacity-50"
+                    >
+                        <i data-lucide="link" class="mr-3" size="24"></i> Follow YBK Sniper on Linktree
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script>
-    lucide.createIcons();
-  </script>
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-8 px-4 text-center text-gray-600 text-sm">
+        <div class="container mx-auto">
+            <p>&copy; <span id="current-year"></span> Certifiedboat Records. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Navigation link click handler
+        document.querySelectorAll('.nav-link').forEach(button => {
+            button.addEventListener('click', function() {
+                const sectionId = this.dataset.section;
+                scrollToSection(sectionId);
+            });
+        });
+
+        // Intersection Observer for active navigation link
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5 // Adjust threshold as needed
+        };
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Remove active class from all links
+                    navLinks.forEach(link => {
+                        link.classList.remove('text-green-700', 'after:scale-x-100');
+                        link.classList.add('text-gray-700', 'hover:text-green-600', 'after:scale-x-0', 'hover:after:scale-x-100');
+                    });
+
+                    // Add active class to the current section's link
+                    const currentNavLink = document.querySelector(`.nav-link[data-section="${entry.target.id}"]`);
+                    if (currentNavLink) {
+                        currentNavLink.classList.remove('text-gray-700', 'hover:text-green-600', 'after:scale-x-0', 'hover:after:scale-x-100');
+                        currentNavLink.classList.add('text-green-700', 'after:scale-x-100');
+                    }
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => {
+            sectionObserver.observe(section);
+        });
+
+        // Optional: Form submission handling (client-side only)
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            // In a real application, you would send this data to a server.
+            // For now, we'll just log it and show a simple message.
+            console.log('Form submitted!');
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            console.log({ name, email, message });
+
+            // You could add a temporary success message here
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset(); // Clear the form
+        });
+    </script>
 </body>
 </html>
