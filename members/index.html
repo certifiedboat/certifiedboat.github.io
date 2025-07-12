@@ -236,10 +236,7 @@
         class="py-20 px-4 bg-white"
     >
         <div class="container mx-auto max-w-2xl">
-            <h2 class="text-5xl font-bold text-green-700 text-center mb-12">Get In Touch</h2>
-            <p class="text-lg text-gray-700 text-center mb-10">
-                Ready to elevate your sound? Fill out the form below or reach out directly.
-            </p>
+            <h2 class="text-5xl font-bold text-green-700 text-center mb-12">Social Media</h2>
             <div class="mt-12 text-center">
                 <p class="text-gray-600 text-lg mb-4">
                     You can also find me on social media:
@@ -333,22 +330,6 @@
 
         sections.forEach(section => {
             sectionObserver.observe(section);
-        });
-
-        // Optional: Form submission handling (client-side only)
-        document.querySelector('form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
-            // In a real application, you would send this data to a server.
-            // For now, we'll just log it and show a simple message.
-            console.log('Form submitted!');
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            console.log({ name, email, message });
-
-            // You could add a temporary success message here
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset(); // Clear the form
         });
     </script>
 </body>
