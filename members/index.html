@@ -156,6 +156,11 @@
                     </button>
                 </li>
                 <li>
+                    <button data-section="shop" class="nav-link relative text-lg font-medium transition-colors duration-300 text-gray-700 hover:text-cb_primary-600 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-cb_primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">
+                        SHOP
+                    </button>
+                </li>
+                <li>
                     <button data-section="members" class="nav-link relative text-lg font-medium transition-colors duration-300 text-gray-700 hover:text-cb_primary-600 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-cb_primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">
                         MEMBERS
                     </button>
@@ -163,11 +168,6 @@
                 <li>
                     <button data-section="about" class="nav-link relative text-lg font-medium transition-colors duration-300 text-gray-700 hover:text-cb_primary-600 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-cb_primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">
                         ABOUT
-                    </button>
-                </li>
-                <li>
-                    <button data-section="shop" class="nav-link relative text-lg font-medium transition-colors duration-300 text-gray-700 hover:text-cb_primary-600 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-cb_primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">
-                        SHOP
                     </button>
                 </li>
                 <li>
@@ -210,28 +210,94 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Services Section -->
     <section
-        id="about"
+        id="shop"
         class="py-20 px-4 bg-gray-100"
     >
-        <div class="container mx-auto max-w-4xl">
-            <h2 class="text-5xl font-bold text-cb_primary text-center mb-12">About Certifiedboat</h2>
-            <div class="flex flex-col md:flex-row items-center md:space-x-10">
-                <div class="md:w-1/2 mb-8 md:mb-0">
-                    <img
-                        src="https://placehold.co/600x400/0e1930/ffffff?text=Certifiedboat+Records"
-                        alt="Certifiedboat Profile"
-                        class="rounded-xl shadow-xl transform hover:scale-105 transition-transform duration-300"
-                    />
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-5xl font-bold text-cb_primary text-center mb-16">SHOP</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Service Card 1: Audio Engineering -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border border-gray-200 transform hover:scale-105 transition-transform duration-300 group">
+                    <div class="text-cb_primary mb-6 flex justify-center">
+                        <i data-lucide="volume-2" size="64" stroke-width="1.5" class="group-hover:animate-bounce"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4 text-center">Audio Engineering</h3>
+                    <ul class="mt-6 text-gray-600 text-center space-y-2">
+                        <li><span class="text-cb_primary text-xl mr-2">•</span> Mixing & Mastering</li>
+                        <li><span class="text-cb_primary text-xl mr-2">•</span> Vocal Processing</li>
+                        <li><span class="text-cb_primary text-xl mr-2">•</span> Sound Design</li>
+                        <li><span class="text-cb_primary text-xl mr-2">•</span> Audio Restoration</li>
+                    </ul>
                 </div>
-                <div class="md:w-1/2">
-                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                        <span class="font-semibold text-cb_primary-600">Certifiedboat Records</span>, often credited as <span class="font-semibold text-cb_primary-600">Certifiedboat</span>, is a Malawian record label and record producer collective. It was founded in <span class="font-semibold text-cb_primary-600">2022</span> by Malawian artist <span class="font-semibold text-cb_primary-600">YBK Sniper</span>, who is the chief executive officer (CEO). The producer collective consists of <span class="font-semibold text-cb_primary-600">YBK Sniper</span> himself, <span class="font-semibold text-cb_primary-600">YBK Glock</span>, and <span class="font-semibold text-cb_primary-600">GeeSlime</span>. A blend of a YouTube channel, record label, and producer union, <span class="font-semibold text-cb_primary-600">Certifiedboat</span> is a medium and agency for producers, as well as an aggregator.
-                    </p>
-                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                        In <span class="font-semibold text-cb_primary-600">2022</span>, Malawian artist <span class="font-semibold text-cb_primary-600">YBK Sniper</span> started <span class="font-semibold text-cb_primary-600">Certifiedboat Records</span>. YBK Sniper believes that Certifiedboat is a way to help producers make money off of music using the same techniques he uses.
-                    </p>
+
+                <!-- Service Card 2: Music Production -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border border-gray-200 transform hover:scale-105 transition-transform duration-300 group">
+                    <div class="text-cb_primary mb-6 flex justify-center">
+                        <i data-lucide="settings" size="64" stroke-width="1.5" class="group-hover:animate-spin"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4 text-center">Music Production</h3>
+                    <ul class="mt-6 text-gray-600 text-center space-y-2">
+                        <li><span class="text-cb_primary text-xl mr-2">•</span> Custom Beat Production</li>
+                        <li><span class="text-cb_primary text-xl mr-2">•</span> Instrumental Composition</li>
+                        <li><span class="text-cb_primary text-xl mr-2">•</span> Arrangement & Structuring</li>
+                        <li><span class="text-cb_primary text-xl mr-2">•</span> Session Recording</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 3: Rapping & Songwriting -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border border-gray-200 transform hover:scale-105 transition-transform duration-300 group">
+                    <div class="text-cb_primary mb-6 flex justify-center">
+                        <i data-lucide="zap" size="64" stroke-width="1.5" class="group-hover:animate-pulse"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4 text-center">Rapping & Songwriting</h3>
+                    <ul class="mt-6 text-gray-600 text-center space-y-2">
+                        <li><span class="text-cb_primary text-xl mr-2">•</span> Feature Verses</li>
+                        <li><span class="text-cb_primary text-xl mr-2">•</span> Ghostwriting</li>
+                        <li><span class="text-cb_primary text-xl mr-2">•</span> Song Structure & Hooks</li>
+                        <li><span class="text-cb_primary text-xl mr-2">•</span> Vocal Performance Coaching</li>
+                    </ul>
+                </div>
+
+                <!-- Drumkit: Nasty Drumkit -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border border-gray-200 transform hover:scale-105 transition-transform duration-300 group">
+                    <div class="text-cb_primary mb-6 flex justify-center">
+                        <i data-lucide="music" size="64" stroke-width="1.5"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4 text-center">Nasty Drumkit</h3>
+                    <p class="text-2xl font-bold text-cb_primary text-center mb-4">$40</p>
+                    <p class="text-lg text-gray-600 text-center">High-quality drum sounds for your beats.</p>
+                </div>
+
+                <!-- Drumkit: Holly Drumkit -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border border-gray-200 transform hover:scale-105 transition-transform duration-300 group">
+                    <div class="text-cb_primary mb-6 flex justify-center">
+                        <i data-lucide="music" size="64" stroke-width="1.5"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4 text-center">Holly Drumkit</h3>
+                    <p class="text-2xl font-bold text-cb_primary text-center mb-4">$40</p>
+                    <p class="text-lg text-gray-600 text-center">Premium drum samples for a polished sound.</p>
+                </div>
+
+                <!-- Drumkit: Ghost Drumkit -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border border-gray-200 transform hover:scale-105 transition-transform duration-300 group">
+                    <div class="text-cb_primary mb-6 flex justify-center">
+                        <i data-lucide="music" size="64" stroke-width="1.5"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4 text-center">Ghost Drumkit</h3>
+                    <p class="text-2xl font-bold text-cb_primary text-center mb-4">$40</p>
+                    <p class="text-lg text-gray-600 text-center">Ethereal and hard-hitting drum sounds.</p>
+                </div>
+
+                <!-- Drumkit: All Eyez on Me Drumkit -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border border-gray-200 transform hover:scale-105 transition-transform duration-300 group">
+                    <div class="text-cb_primary mb-6 flex justify-center">
+                        <i data-lucide="music" size="64" stroke-width="1.5"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4 text-center">All Eyez on Me Drumkit</h3>
+                    <p class="text-2xl font-bold text-cb_primary text-center mb-4">$40</p>
+                    <p class="text-lg text-gray-600 text-center">Classic and versatile drum sounds for any genre.</p>
                 </div>
             </div>
         </div>
@@ -406,54 +472,28 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- About Section -->
     <section
-        id="shop"
+        id="about"
         class="py-20 px-4 bg-gray-100"
     >
-        <div class="container mx-auto max-w-6xl">
-            <h2 class="text-5xl font-bold text-cb_primary text-center mb-16">SHOP</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <!-- Service Card 1: Audio Engineering -->
-                <div class="bg-white p-8 rounded-xl shadow-xl border border-gray-200 transform hover:scale-105 transition-transform duration-300 group">
-                    <div class="text-cb_primary mb-6 flex justify-center">
-                        <i data-lucide="volume-2" size="64" stroke-width="1.5" class="group-hover:animate-bounce"></i>
-                    </div>
-                    <h3 class="text-3xl font-bold text-gray-900 mb-4 text-center">Audio Engineering</h3>
-                    <ul class="mt-6 text-gray-600 text-center space-y-2">
-                        <li><span class="text-cb_primary text-xl mr-2">•</span> Mixing & Mastering</li>
-                        <li><span class="text-cb_primary text-xl mr-2">•</span> Vocal Processing</li>
-                        <li><span class="text-cb_primary text-xl mr-2">•</span> Sound Design</li>
-                        <li><span class="text-cb_primary text-xl mr-2">•</span> Audio Restoration</li>
-                    </ul>
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-5xl font-bold text-cb_primary text-center mb-12">About Certifiedboat</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-10">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img
+                        src="https://placehold.co/600x400/0e1930/ffffff?text=Certifiedboat+Records"
+                        alt="Certifiedboat Profile"
+                        class="rounded-xl shadow-xl transform hover:scale-105 transition-transform duration-300"
+                    />
                 </div>
-
-                <!-- Service Card 2: Music Production -->
-                <div class="bg-white p-8 rounded-xl shadow-xl border border-gray-200 transform hover:scale-105 transition-transform duration-300 group">
-                    <div class="text-cb_primary mb-6 flex justify-center">
-                        <i data-lucide="settings" size="64" stroke-width="1.5" class="group-hover:animate-spin"></i>
-                    </div>
-                    <h3 class="text-3xl font-bold text-gray-900 mb-4 text-center">Music Production</h3>
-                    <ul class="mt-6 text-gray-600 text-center space-y-2">
-                        <li><span class="text-cb_primary text-xl mr-2">•</span> Custom Beat Production</li>
-                        <li><span class="text-cb_primary text-xl mr-2">•</span> Instrumental Composition</li>
-                        <li><span class="text-cb_primary text-xl mr-2">•</span> Arrangement & Structuring</li>
-                        <li><span class="text-cb_primary text-xl mr-2">•</span> Session Recording</li>
-                    </ul>
-                </div>
-
-                <!-- Service Card 3: Rapping & Songwriting -->
-                <div class="bg-white p-8 rounded-xl shadow-xl border border-gray-200 transform hover:scale-105 transition-transform duration-300 group">
-                    <div class="text-cb_primary mb-6 flex justify-center">
-                        <i data-lucide="zap" size="64" stroke-width="1.5" class="group-hover:animate-pulse"></i>
-                    </div>
-                    <h3 class="text-3xl font-bold text-gray-900 mb-4 text-center">Rapping & Songwriting</h3>
-                    <ul class="mt-6 text-gray-600 text-center space-y-2">
-                        <li><span class="text-cb_primary text-xl mr-2">•</span> Feature Verses</li>
-                        <li><span class="text-cb_primary text-xl mr-2">•</span> Ghostwriting</li>
-                        <li><span class="text-cb_primary text-xl mr-2">•</span> Song Structure & Hooks</li>
-                        <li><span class="text-cb_primary text-xl mr-2">•</span> Vocal Performance Coaching</li>
-                    </ul>
+                <div class="md:w-1/2">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        <span class="font-semibold text-cb_primary-600">Certifiedboat Records</span>, often credited as <span class="font-semibold text-cb_primary-600">Certifiedboat</span>, is a Malawian record label and record producer collective. It was founded in <span class="font-semibold text-cb_primary-600">2022</span> by Malawian artist <span class="font-semibold text-cb_primary-600">YBK Sniper</span>, who is the chief executive officer (CEO). The producer collective consists of <span class="font-semibold text-cb_primary-600">YBK Sniper</span> himself, <span class="font-semibold text-cb_primary-600">YBK Glock</span>, and <span class="font-semibold text-cb_primary-600">GeeSlime</span>. A blend of a YouTube channel, record label, and producer union, <span class="font-semibold text-cb_primary-600">Certifiedboat</span> is a medium and agency for producers, as well as an aggregator.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        In <span class="font-semibold text-cb_primary-600">2022</span>, Malawian artist <span class="font-semibold text-cb_primary-600">YBK Sniper</span> started <span class="font-semibold text-cb_primary-600">Certifiedboat Records</span>. YBK Sniper believes that Certifiedboat is a way to help producers make money off of music using the same techniques he uses.
+                    </p>
                 </div>
             </div>
         </div>
